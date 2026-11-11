@@ -1,1 +1,477 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The official portfolio of Gideon Mukiza — Web Developer, Digital Designer and Author.">
+  <title>Gideon Mukiza | Personal Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f8fc;
+      color: #18243a;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #101d35;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #e6b85c;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #101d35, #243f68);
+      color: white;
+      padding: 105px 8%;
+      text-align: center;
+    }
+
+    .hero .intro {
+      color: #e6b85c;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 65px);
+      margin-bottom: 12px;
+    }
+
+    .hero h2 {
+      font-size: 21px;
+      font-weight: normal;
+      color: #d7e0ef;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #e0e6f0;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 13px 27px;
+      background: #e6b85c;
+      color: #101d35;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 12px;
+      color: #101d35;
+    }
+
+    .section-intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #647087;
+    }
+
+    .about {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about p {
+      margin-bottom: 15px;
+      color: #526078;
+    }
+
+    .highlight {
+      background: #edf1f8;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 9px;
+      border: 1px solid #e6eaf1;
+      box-shadow: 0 5px 20px rgba(16, 29, 53, 0.05);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card .symbol {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #172c4d;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #657087;
+      font-size: 15px;
+    }
+
+    .education {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-left: 4px solid #e6b85c;
+      border-radius: 5px;
+    }
+
+    .contact {
+      background: #101d35;
+      color: white;
+      text-align: center;
+    }
+
+    .contact .section-title {
+      color: white;
+    }
+
+    .contact p {
+      color: #d7e0ef;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background: #0b1425;
+      color: #c7d0df;
+      padding: 25px 8%;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 13px;
+      }
+
+      .hero {
+        padding: 75px 7%;
+      }
+
+      section {
+        padding: 55px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">GIDEON MUKIZA</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#projects">Projects</a>
+      <a href="#books">Books</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="intro">Welcome to my official portfolio</div>
+
+      <h1>Gideon Mukiza</h1>
+
+      <h2>Web Developer | Digital Designer | Author</h2>
+
+      <p>
+        I build websites, develop digital solutions, create visual
+        designs and write inspiring publications. I am passionate
+        about technology, creativity, learning and meaningful impact.
+      </p>
+
+      <a href="#about" class="button">Discover My Work</a>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+
+      <p class="section-intro">
+        A little about my background, journey and professional interests.
+      </p>
+
+      <div class="about">
+        <p>
+          My name is Gideon Mukiza. I am a Software Engineering
+          graduate, web developer, digital designer and author with
+          a passion for using creativity and technology to solve
+          problems and communicate ideas.
+        </p>
+
+        <p>
+          My interests include website development, digital design,
+          software solutions, writing, publishing and creative media.
+          I enjoy learning, developing ideas and turning concepts
+          into practical projects.
+        </p>
+
+        <p>
+          Beyond technology and creative work, I am also involved
+          in Christian ministry, preaching and community outreach.
+        </p>
+      </div>
+    </section>
+
+    <section class="highlight" id="expertise">
+      <h2 class="section-title">Areas of Expertise</h2>
+
+      <p class="section-intro">
+        The fields in which I work, create and continue to grow.
+      </p>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="symbol">💻</div>
+          <h3>Website Development</h3>
+          <p>
+            Building professional websites, digital platforms
+            and practical online solutions.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">🎨</div>
+          <h3>Digital Design</h3>
+          <p>
+            Creating visual identities, graphics, promotional
+            materials and digital designs.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">📚</div>
+          <h3>Writing & Publishing</h3>
+          <p>
+            Writing books, developing manuscripts and sharing
+            ideas through published works.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">⚙️</div>
+          <h3>Software Projects</h3>
+          <p>
+            Exploring software development and building
+            practical technology solutions.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Selected Projects</h2>
+
+      <p class="section-intro">
+        A growing collection of my technology and digital projects.
+      </p>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="symbol">🏢</div>
+          <h3>Peace Bakery Management System</h3>
+          <p>
+            A management system project developed as part of
+            my software development journey.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">🌐</div>
+          <h3>Website Development</h3>
+          <p>
+            Professional website design and development
+            for individuals, organizations and institutions.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">📱</div>
+          <h3>Digital Applications</h3>
+          <p>
+            A growing area of interest involving practical
+            digital applications and software solutions.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="highlight" id="books">
+      <h2 class="section-title">Books & Publications</h2>
+
+      <p class="section-intro">
+        Writing, reflection and ideas shared through books.
+      </p>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="symbol">📖</div>
+          <h3>The Alpha and the Omega</h3>
+          <p>
+            From the Village Cows to the Code:
+            A Software Engineer's Journey of Faith.
+          </p>
+          <p><strong>Author: Gideon Mukiza</strong></p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">📘</div>
+          <h3>The Price of Peace</h3>
+          <p>
+            How Unholy Treaties and the Jezebel Spirit
+            Compromise Kingdoms.
+          </p>
+          <p><strong>Author: Gideon Mukiza</strong></p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="creative">
+      <h2 class="section-title">Creative Works & Ministry</h2>
+
+      <p class="section-intro">
+        Creativity, music, communication, faith and community impact.
+      </p>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="symbol">🎵</div>
+          <h3>Music & Media</h3>
+          <p>
+            Music projects, creative productions, visual media
+            and digital content.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">✝️</div>
+          <h3>Ministry & Evangelism</h3>
+          <p>
+            Preaching, Christian leadership, evangelism
+            and community outreach.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">🖼️</div>
+          <h3>Graphic Design</h3>
+          <p>
+            Posters, book covers, promotional artwork
+            and other visual projects.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="highlight" id="education">
+      <h2 class="section-title">Education</h2>
+
+      <div class="education">
+        <h3>Software Engineering</h3>
+        <p>Ndejje University, Uganda</p>
+        <p>Graduation: 2023</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">Let's Connect</h2>
+
+      <p>
+        Interested in website development, digital design,
+        creative collaborations or professional opportunities?
+        I welcome meaningful connections and conversations.
+      </p>
+
+      <a href="mailto:mukizagideon784@gmail.com" class="button">
+        Contact Me
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Gideon Mukiza. All rights reserved.</p>
+    <p>Technology • Creativity • Publications</p>
+  </footer>
+
+</body>
+</html>
+
